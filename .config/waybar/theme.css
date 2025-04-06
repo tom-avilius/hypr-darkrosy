@@ -1,0 +1,22 @@
+:root {
+
+  --black: #040408;
+  --delft-blue: #3d3c75;
+  /*text color: greyish*/
+  --rose-quartz: #a78f9d;
+  /*rosy purple*/
+  --quinacridone-magenta: #864568;
+  /*darkish purple*/
+  --african-violet: #a878b4;
+  /*bluish green*/
+  --prussian-blue: #1c304b;
+  /*tealish blue*/
+  --powder-blue: #a8bae0;
+  /*purplish*/
+  --pomp-and-power: #8879a7;
+  /*skyish blue*/
+  --glaucous: #4e7dd9;
+  --marian-blue: #454d9a;
+  --green-light: #1C2B43;
+  --green: #132237;
+}

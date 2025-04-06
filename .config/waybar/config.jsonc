@@ -1,0 +1,86 @@
+
+{
+  "layer": "top",
+  "height": 20,
+  "position": "bottom",
+  "exclusive": "true",
+  "margin": "3 80 10 80",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-right": ["network", "pulseaudio", "pulseaudio/slider"],
+  "modules-center": [ "custom/me", "clock"],
+
+  "hyprland/workspaces": {
+  "format": "<sub>{icon}</sub> {windows}",
+  "format-window-separator": "  ",
+  "window-rewrite-default": "",
+  "window-rewrite": {
+    "title<.*youtube.*>": "<span color=\"#1C2B43\" font='15' rise='-8000'></span", // Windows whose titles contain "youtube"
+    "GitHub": "<span font='15' color=\"#1C2B43\" rise='-8000'></span>", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
+    "kitty": "<span color=\"#4e7dd9\" font='15' rise='-8000'></span>", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
+    "NVIM": "<span color=\"#454d9a\" font='15' rise='-8000'></span>",
+    "Zen Browser": "<span font='15' color=\"#3d3c75\" rise='-7000'>󰈸</span>",
+	  },
+	},
+ 
+  "custom/me": {
+
+    "format": "<span color=\"#a8bae0\">tom-avilius   @</span>   "
+  },
+
+  "mpris": {
+
+    "interval": 10,
+    "format": "{status_icon}\t{artist} - {title}",
+    "title-len": 25,
+    "artist-len": 15,
+    "status-icons": {
+      "playing": "\uf04b",
+      "paused": "\uf04c"
+    }
+  },
+
+  "cpu": {
+
+    "interval": 2,
+    "tooltip": false,
+    "format": "{usage}% <span color=\"#eb6f92\">\uf4bc</span>"
+  },
+
+  "memory": {
+
+    "format": "{used} <span color=\"#56949f\">󰽘</span>"
+  },
+
+  "disk": {
+
+    "format": "{used} <span color=\"#c4a7e7\">\uebb5</span>",
+    "tooltip": false,
+  },
+
+  "pulseaudio": {
+    "format": "<span color=\"#a78f9d\">{icon}</span>",
+    "format-icons": {
+        "headphone": "",
+        "default": ["", ""]
+    },
+  },
+
+  "pulseaudio/slider": {
+    "min": 0,
+    "max": 150,
+    "orientation": "horizontal"
+  },
+
+  "clock": {
+
+    "format": "{:%H:%M}",
+    "tooltip": false
+  },
+
+  "network": {
+    "interface": "enp8s0",
+    "format": "{icon}",
+    "format-disconnected": "", //An empty format will hide the module.
+    "format-icons": "<span color=\"#a78ffd\"></span>",
+}
+}
